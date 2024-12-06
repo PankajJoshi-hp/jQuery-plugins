@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fancybox Practice</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <style>
+      img {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <a data-fancybox="gallery" href="assets/Screenshot 2024-10-29 012620.png">
+      <img src="assets/Screenshot 2024-10-29 012620.png" alt="Thumbnail 1" />
+      <h1>This is image one</h1>
+    </a>
+    <br /><br />
+
+    <a data-fancybox="gallery" href="assets/Screenshot 2024-11-06 154418.png">
+      <img src="assets/Screenshot 2024-11-06 154418.png" alt="Thumbnail 2" />
+      <h1>This is image 2</h1>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {});
+    </script>
+  </body>
+</html>
